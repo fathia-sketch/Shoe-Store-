@@ -1,0 +1,470 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+    padding: 15px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1769e0;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav a {
+    font-size: 14px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #1769e0;
+}
+
+.nav-btn,
+.btn,
+.footer-btn {
+    display: inline-block;
+    background: #1769e0;
+    color: white;
+
+    padding: 10px 22px;
+    border-radius: 3px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.nav-btn:hover,
+.btn:hover,
+.footer-btn:hover {
+    background: #0d4fae;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 520px;
+    padding: 70px 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-content > p {
+    max-width: 480px;
+    margin-bottom: 12px;
+    color: #666;
+}
+
+.hero-content .btn {
+    margin-top: 15px;
+}
+
+.hero-image {
+    width: 42%;
+    max-width: 450px;
+}
+
+.hero-image img {
+    height: 380px;
+    object-fit: cover;
+}
+
+
+/* ================= COLLECTION ================= */
+
+.collection {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.collection h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.collection ul {
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+}
+
+.collection li {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+
+/* ================= BEST SHOES ================= */
+
+.best-shoes {
+    padding: 80px 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+.shoe-info {
+    width: 50%;
+}
+
+.shoe-info h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.shoe-info h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.shoe-info p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.shoe-info .btn {
+    margin-top: 10px;
+}
+
+.shoe-image {
+    width: 40%;
+    max-width: 400px;
+}
+
+.shoe-image img {
+    height: 250px;
+    object-fit: contain;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    padding: 80px 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+.about-image {
+    width: 40%;
+    max-width: 400px;
+}
+
+.about-image img {
+    height: 250px;
+    object-fit: contain;
+}
+
+.about-content {
+    width: 50%;
+}
+
+.about-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.about-content .btn {
+    margin-top: 10px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #2474df;
+    color: white;
+    padding-top: 45px;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 20px 10%;
+}
+
+.footer-content h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    margin-bottom: 20px;
+}
+
+.footer-btn {
+    background: white;
+    color: #1769e0;
+}
+
+.footer-btn:hover {
+    background: #eeeeee;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding: 18px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid rgba(255,255,255,0.25);
+}
+
+.footer-bottom p {
+    font-size: 13px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .navbar nav {
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 60px 7%;
+        gap: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .best-shoes,
+    .about {
+        padding: 60px 7%;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .hero,
+    .best-shoes,
+    .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 7%;
+    }
+
+    .hero-content,
+    .shoe-info,
+    .about-content {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-image,
+    .shoe-image,
+    .about-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        height: 300px;
+    }
+
+    .collection {
+        padding: 50px 7%;
+    }
+
+    .collection ul {
+        text-align: left;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+/* ================= FOOTER ================= */
+
+footer {
+    background: #4da3ff; /* Buluug khafiif ah */
+    color: white;
+    padding-top: 45px;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 20px 10%;
+}
+
+.footer-content h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    margin-bottom: 20px;
+}
+
+.footer-btn {
+    background: white;
+    color: #014181;
+}
+
+.footer-btn:hover {
+    background: #eeeeee;
+}
+
+
+/* Qaybta hoose ee footer-ka */
+
+.footer-bottom {
+    background: #014181; /* Buluug madow/rasin ah */
+
+    margin-top: 30px;
+    padding: 18px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
